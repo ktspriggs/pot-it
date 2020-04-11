@@ -44,8 +44,9 @@ body {
 	align-items: center;
 }
 
-.nav-right {
+.menu {
 	display: flex;
+	list-style-type: none;
 	margin-right: 20px;
 }
 
