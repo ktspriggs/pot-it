@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Prociono&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/598890ec37.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/potit.css"> <!-- pg. 84-->
+		<link rel="stylesheet" type="text/css" href="css/queries.css">
+		<title>Pot It</title>
+	</head>
+
+<body> 
+
+	<div class="main-wrapper">
+
+		<header id="header" class="header"> 
+			<div class="hamburger">
+				<input class="menu-btn" type="checkbox" id="menu-btn"/>
+				<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+			</div> <!-- hamburger -->
+			<nav id="nav-bar">
+				<div class="nav-left">
+					<div class="header-img">
+						<img id="header-img" src="images/aloe-vera.png" alt="Plant logo">
+					</div> <!--img-->
+	 				<h1 class="title">Pot It<span class="period">.</span></h1>
+				</div> <!-- nav-left -->
+				<div class="nav-right">
+					<ul class="menu">
+						<li><a class="nav-link" href="#shop">Shop</a></li>
+						<li><a class="nav-link" href="#new-arrivals">New Arrivals</a></li>
+						<li><a class="nav-link" href="#care">Care</a></li>
+						<li><a class="nav-link" href="#about">About</a></li>
+						<li class="cart-icon"><a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i></a></li>
+					</ul>
+				</div> <!--nav-right-->
+			</nav> <!-- nav-bar -->
+		</header> <!-- header -->
+		
+		<div class="hero">
+			<img src="images/potit-hero.jpg" alt="Succulents">
+			<div class="create">
+				Create your indoor garden
+			</div>
+		</div> <!--hero-->
+
+		<div id="content-section">
+			<div class="background-img1" style="background-image: url('images/background.png');"></div>
+			<div class="shop-left">
+				<h2 class="section-header">How to Shop</h2>
+				<p class="shop-content">
+				Picking the right plant for your space can be difficult, but we're here 
+				to help. Whether your home has minimal light or an abundance, there's a 
+				perfect plant for you. We've provided care instructions for all plants so 
+				that you can select ones that will thrive and bring joy to your home. Welcome
+				to our plant family, and happy shopping!
+			</p>
+			<button class="start-shopping">Start Shopping</button>
+			</div> <!--left-->
+			<div class="video">
+				<iframe id="video" src="https://www.youtube.com/embed/R-K-mcOb3Zo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div> <!--vid-->
+		</div> <!--shop-->
+
+		<div id="content-section" class="new-arrivals">
+			<div class="background-img2" style="background-image: url('images/background.png');"></div>
+			<div class="arrivals-right">
+				<h2 class="section-header">New Arrivals</h2>
+				<p class="arrivals-content">
+					Didn't find what you were looking for? New plants arrive weekly 
+					so that we can provide you a wide range of selection. To stay
+					updated on new arrivals be sure to subscribe to our newsletter, and 
+					contact us on social media for any plant requests. 
+				</p>
+				<button class="explore-arrivals">Explore Arrivals</button>
+			</div> <!--right-->
+			<div class="arrivals-left">
+				<div class="arrivals-img" style="background-image: url('images/arrivals-img.jpg');"></div>
+			</div> <!--left-->
+		</div> <!--arrivals-->
+
+		<div id="content-section">
+			<div class="care-left">
+				<h2 class="section-header">Care</h2>
+				<p class="care-content">
+					In addition to the basic care instructions provided there are several
+					online workshops available to elevate your plant game, because we know you want
+					your plants to live their best lives. So if you are looking to 
+					expand your knowledge, check them out!
+				</p>
+				<button class="workshops">Workshops</button>
+			</div> <!--right-->
+			<div class="care-right">
+				<div class="care-img" style="background-image: url('images/plant-care.jpg');"></div>
+			</div> <!--right-->
+		</div> <!--care-->
+
+		<div id="about">
+			<div class="background-img3" style="background-image: url('images/background.png');"></div>
+			<div class="about-content">
+				<h2 class="section-header">About</h2>
+				<p class="about-text">
+					We are decicated to spreading the joy of plants by providing a variety of 
+					products that are sure to fit various lifestyles and budgets. That way,
+					everyone can have the ability to create their own indoor jungle. Becoming
+					a plant parent is a big step, but we will be there for you throughout the 
+					process. New plant parents will gain confidence as we continue to inspire
+					people with one plant at a time. 
+				</p>
+			</div> <!--about-content-->
+			<div class="about-images">
+				<div class="store-img left-img" style="background-image: url('images/about-sec1.jpg');"></div>
+				<div class="store-img right-img" style="background-image: url('images/plant-store.jpg');"></div>
+			</div>
+		</div> <!--about-->
+
+		<footer class="footer">
+			<div class="background-img4" style="background-image: url('images/background.png');"></div>
+			<div class="subscribe">
+				<hr class="header-line"/>
+				<p class="sub-text">Subscribe to our newsletter</p>
+				<form action="https://www.freecodecamp.com/email-submitid=" method="get" id="form" class="form">
+					<!-- <label id="email-label" for="email"></label> -->
+					<div class="form-container">
+						<input id="email" class="email" type="email" name="email" placeholder="example@gmail.com" required>
+						<input type="image" class="submit" value="submit" name="submit" src="images/email.svg" alt="Submit button">
+						<input type="submit" id="submit" value="submit" name="submit">
+					</div> <!--container-->
+			</div> <!--subscribe-->
+			<div class="socials">
+				<button class="social-link"><a href="#"><i class="fab fa-facebook-square fa-3x" style="color: black"></i></a></button>
+				<button class="social-link"><a href="#"><i class="fab fa-instagram fa-3x" style="color: black"></i></a></button>
+				<button class="social-link"><a href="#"><i class="fab fa-twitter-square fa-3x" style="color: black"></i></a></button>
+			</div> <!--socials-->
+			<div id="bottom">
+				<div class="bottom-left">
+					<button><a class="foot-link" href="#">Locations</a></button>
+					<button><a class="foot-link" href="#">FAQ</a></button>
+					<button><a class="foot-link" href="#">Shipping Info</a></button>
+					<button><a class="foot-link" href="#">Terms of Use</a></button>
+					<button><a class="foot-link" href="#">Privacy Policy</a></button>
+				</div> <!--left-->
+				<div class="bottom-right">
+					<p>© 2020, Pot It. All rights reserved.</p>
+				</div> <!--right-->
+			</div> <!--bottom>-->
+		</footer>
+
+	</div> <!-- main-wrapper -->
+
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+
+</body>
+</html>
