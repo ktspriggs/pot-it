@@ -45,7 +45,22 @@
         margin-bottom: 50px;
     }
 
-    #content-section {
+    .background-img1 {
+        bottom: -5%;
+        left: -41%;
+        transform: rotate(147deg);
+        width: 46%;
+    }
+
+    .background-img3 {
+        bottom: 57%;
+        left: -28%;
+        width: 31%;
+        transform: rotate(90deg);
+    }
+
+
+    .content-section {
         flex-direction: column;
         margin-bottom: 10px;
         text-align: center;

@@ -20,6 +20,7 @@ margin: 0 auto;
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #626262;
+	overflow-x: hidden;
 }
 
 .section-header {
@@ -28,7 +29,7 @@ body {
 	margin-bottom: 30px;
 }
 
-#content-section {
+.content-section {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -67,6 +68,45 @@ body {
 .button:hover {
 	background-color: #0C7025;
 	color: white;
+}
+
+.leaf-img {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.background-img1 {
+	bottom: 15%;
+	left: -43%;
+	transform: rotate(154deg);
+	width: 48%;
+	height: 160%;
+}
+
+.background-img2 {
+	top: 67%;
+	right: -28%;
+	transform: rotate(-19deg);
+	width: 34%;
+	height: 85%;
+}
+
+.background-img3 {
+	bottom: 62%;
+	left: -35%;
+	transform: rotate(80deg);
+	width: 38%;
+	height: 79%;
+}
+
+.background-img4 {
+	transform: rotate(-93deg);
+	right: -31%;
+	bottom: -11%;
+	width: 34%;
+	height: 157%;
 }
 
 /* Header Styling */
@@ -152,6 +192,16 @@ body {
 	margin: 15px 20px 15px 15px;
 }
 
+.main-content {
+	transition: all 0.5s ease-out;
+}
+
+.opacity {
+	opacity: .4;
+	transition: all 0.5s ease-in;
+}
+
+
 /* Hero Section */
 
 .hero {
@@ -180,16 +230,6 @@ img {
 
 /* Shop Section */
 
-.background-img1 {
-	background-size: cover;
-	background-position: center;
-	position: absolute;
-	bottom: 28%;
-	left: -47%;
-	transform: rotate(154deg);
-	width: 50%;
-	height: 160%;
-}
 
 #video	{
 	width: 100%;
@@ -198,19 +238,9 @@ img {
 
 /* Arrivals Section */
 
-.background-img2 {
-	background-size: cover;
-	background-position: center;
-	position: absolute;
-	top: 66%;
-	right: -27%;
-	transform: rotate(-19deg);
-	width: 34%;
-	height: 85%;
-}
-
 .new-arrivals {
 	flex-direction: row-reverse;
+	
 }
 
 /* About Section */
@@ -219,18 +249,6 @@ img {
 	width: 100%;
 	margin-bottom: 65px;
 	position: relative;
-	overflow-x: hidden;
-}
-
-.background-img3 {
-	background-size: cover;
-	background-position: center;
-	position: absolute;
-	bottom: 62%;
-	left: -35%;
-	transform: rotate(77deg);
-	width: 33%;
-	height: 79%;
 }
 
 .about-content {
@@ -254,18 +272,6 @@ img {
 
 .footer {
 	position: relative;
-	overflow-x: hidden;
-}
-
-.background-img4 {
-	background-size: cover;
-	background-position: center;
-	position: absolute;
-	transform: rotate(-93deg);
-	right: -36%;
-	bottom: 2%;
-	width: 34%;
-	height: 157%;
 }
 
 /* Subscribe Section */
