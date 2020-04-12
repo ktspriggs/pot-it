@@ -1,3 +1,5 @@
+/* General Styling */
+
 * {
 	margin: 0;  
 	padding: 0;
@@ -16,13 +18,61 @@ margin: 0 auto;
 }
 
 body {
-	font-family: 'Prociono', serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #626262;
 }
 
+.section-header {
+	font-family: 'Prociono', serif;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+#content-section {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 140px;
+	position: relative;
+	/* overflow-x: hidden; */
+}
+
+.section-half {
+	width: 48%;
+}
+
+.content {
+	text-align: justify;
+	line-height: 28px;
+	margin-bottom: 30px;
+}
+
+.section-img {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 400px;
+}
+
+.button {
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 13px;
+	color: #000000;
+	text-decoration: none;	
+	transition: 0.5s ease;
+}
+
+.button:hover {
+	background-color: #0C7025;
+	color: white;
+}
+
+/* Header Styling */
+
 .header {
 	width: 100%;
-	height: 124px;
 }
 
 .period {
@@ -30,12 +80,9 @@ body {
 }
 
 #nav-bar {
-	width: 100%;
-	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	font-family: 'Open Sans', sans-serif;
 	color: black;
 }
 
@@ -50,11 +97,36 @@ body {
 	margin-right: 20px;
 }
 
+/* Mobile Menu Styling */
+
+.mobile-menu-container {
+	display: none;
+}
+
+.mobile-menu-burger {
+	width: 17px;
+	height: inherit;
+}
+
+.burger-closed {
+    top: 25px;
+    right: 50px;
+}
+
+.burger-open {
+    top: 25px;
+    right: 50px;
+}
+
+.display-none {
+    display: none;
+}
+
 .title {
 	font-size: 30px;
 }
 
-#nav-bar li {
+.nav-right li {
 	border: none;
 	padding-right: 20px;
 }
@@ -67,7 +139,6 @@ body {
 .nav-link {
 	text-decoration: none; 
 	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
 	color: #000000;
 }
 
@@ -80,6 +151,8 @@ body {
 	height: 50px;
 	margin: 15px 20px 15px 15px;
 }
+
+/* Hero Section */
 
 .hero {
 	width: 100%;
@@ -94,6 +167,7 @@ img {
 }
 
 .create {
+	font-family: 'Prociono', sans-serif;
 	position: absolute;
 	top: 16%;
 	left: 22%;
@@ -104,20 +178,7 @@ img {
 	text-align: -webkit-match-parent;
 }
 
-.section-header {
-	font-size: 40px;
-	margin-bottom: 30px;
-}
-
-#content-section {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 140px;
-	position: relative;
-	overflow-x: hidden;
-}
+/* Shop Section */
 
 .background-img1 {
 	background-size: cover;
@@ -130,49 +191,12 @@ img {
 	height: 160%;
 }
 
-
-.shop-left {
-	padding-right: 70px;
-}
-
-.shop-content {
-	font-family: 'Open Sans', sans-serif;
-	text-align: justify;
-	line-height: 28px;
-	margin-bottom: 30px;
-}
-
-.start-shopping {
-	width: 112px;
-	height: 45px;
-	border-radius: 10px;
-	font-size: 13px;
-	font-family: 'Open Sans', sans-serif;
-	color: #000000;
-	text-decoration: none;	
-	transition: 0.5s ease;
-}
-
-.start-shopping:hover {
-	background-color: #0C7025;
-	color: white;
-}
-
 #video	{
-	width: 560px;
-	height: 315px;
+	width: 100%;
+	height: 400px;
 }
 
-/*#new-arrivals {
-	width: 100%;
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 140px;
-	position: relative;
-	overflow-x: hidden;
-}*/
+/* Arrivals Section */
 
 .background-img2 {
 	background-size: cover;
@@ -189,96 +213,7 @@ img {
 	flex-direction: row-reverse;
 }
 
-.arrivals-right {
-	width: 50%;
-	padding-left: 70px;
-}
-
-.arrivals-content {
-	font-family: 'Open Sans', sans-serif;
-	text-align: justify;
-	line-height: 28px;
-	margin-bottom: 30px;
-}
-
-.arrivals-left {
-	width: 50%;
-}
-
-.arrivals-img {
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 400px;
-}
-
-.explore-arrivals {
-	width: 115px;
-	height: 45px;
-	border-radius: 10px;
-	font-size: 13px;
-	font-family: 'Open Sans', sans-serif;
-	color: #000000;
-	text-decoration: none;	
-	transition: 0.5s ease;
-}
-
-.explore-arrivals:hover {
-	background-color:  #0C7025;
-	color: white;
-}
-
-/*#care {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 140px;
-}*/
-
-
-.care-left {
-	width: 50%;
-	padding-right: 70px;
-}
-
-.care-content {
-	font-family: 'Open Sans', sans-serif;
-	text-align: justify;
-	line-height: 28px;
-	margin-bottom: 30px;
-}
-
-.care-right {
-	width: 50%;
-}
-
-.care-img {
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 400px;
-}
-
-.workshops {
-	width: 112px;
-	height: 40px;
-	border-radius: 10px;
-	font-size: 13px;
-	font-family: 'Open Sans', sans-serif;
-	color: #000000;
-	text-decoration: none;	
-	transition: 0.5s ease;
-}
-
-.workshops:hover {
-	background-color: #0C7025;
-	color: white;
-}
-
-.care-img {
-	max-width: 710px;
-}
+/* About Section */
 
 #about {
 	width: 100%;
@@ -299,9 +234,7 @@ img {
 }
 
 .about-content {
-	font-family: 'Open Sans', sans-serif;
 	text-align: center;
-	line-height: 28px;
 	margin-bottom: 45px;
 }
 
@@ -316,6 +249,8 @@ img {
 	width: 48%;
 	height: 400px;
 }
+
+/* Footer Section */
 
 .footer {
 	position: relative;
@@ -333,12 +268,13 @@ img {
 	height: 157%;
 }
 
+/* Subscribe Section */
+
 .sub-text {
 	margin-bottom: 25px;
 }
 
 .subscribe {
-	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	margin-bottom: 25px;
 }
@@ -361,7 +297,6 @@ img {
     height: 34px;
     width: 386px;
 	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
     color: #999;
     padding-left: 8px;
     vertical-align: top;
@@ -406,12 +341,11 @@ img {
 .bottom-left button {
 	border: none;
 	margin-bottom: 27px;
-	padding-left: 10px; /*fix so that this is done w/ margin*/
+	padding-left: 10px;
 	background-color: white;
 }
 
 .foot-link {
-	font-family: 'Open Sans', sans-serif;
 	color: #000000;
 	text-decoration: none;
 }
@@ -422,23 +356,4 @@ img {
 
 .bottom-right {
 	font-size: 12px;
-	/*font-family: 'Open Sans', sans-serif;*/
-}
-
-@media only screen and (width: 1024px) {
-	
-	.background-img1 {
-		background-size: cover;
-		background-position: center;
-		position: absolute;
-		bottom: 60%;
-		left: -48%;
-		transform: rotate(154deg);
-		width: 43%;
-		height: 73%;
-	}
-		
-	
-	
-	
 }
