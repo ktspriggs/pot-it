@@ -63,6 +63,7 @@ body {
 	color: #000000;
 	text-decoration: none;	
 	transition: 0.5s ease;
+	cursor: pointer;
 }
 
 .button:hover {
@@ -146,6 +147,7 @@ body {
 .mobile-menu-burger {
 	width: 17px;
 	height: inherit;
+	cursor: pointer;
 }
 
 .burger-closed {
