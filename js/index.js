@@ -9,7 +9,7 @@ $(document).ready(function() {
     //menu opens and closes and main content opacity changes//
     mobileMenuBurger.on('click', function () {
         burgerOpen.toggleClass('display-none');
-        burgerClosed.toggleClass ('display-none');
+        burgerClosed.toggleClass('display-none');
         mobileMenu.toggleClass('display-none');
         mainContent.toggleClass('opacity');
     });
